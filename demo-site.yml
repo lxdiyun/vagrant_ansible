@@ -1,0 +1,9 @@
+---
+- name: Configure demo boxes
+  hosts: all
+  sudo: true
+  vars_files:
+  - netvars/net.yml
+
+  roles:
+  - common
