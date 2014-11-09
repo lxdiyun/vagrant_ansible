@@ -1,9 +1,11 @@
 ---
-- name: Configure demo boxes
-  hosts: all
+- name: Install Wordpress, MySQL, Nginx, and PHP-FPM
+  hosts: vm1
   sudo: true
-  vars_files:
-  - netvars/net.yml
 
   roles:
-  - common
+    - common
+    - mysql 
+    - nginx
+    - php-fpm
+    - wordpress

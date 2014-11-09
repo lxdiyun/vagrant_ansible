@@ -1,0 +1,6 @@
+[webservers]
+vm1
+
+[vm1:vars]
+ansible_ssh_host=178.18.8.11
+ansible_selinux=false

@@ -14,6 +14,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "demo-site.yml"
+    #ansible.hosts = "hosts"
     ansible.verbose = "v"
     ansible.sudo = "true"
     ansible.sudo_user = "root"
