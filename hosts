@@ -1,6 +1,2 @@
 [webservers]
-vm1
-
-[vm1:vars]
-ansible_ssh_host=178.18.8.11
-ansible_selinux=false
+vm1 ansible_ssh_host=172.17.8.11 ansible_ssh_user=vagrant ansible_ssh_private_key_file=~/.vagrant.d/insecure_private_key 
